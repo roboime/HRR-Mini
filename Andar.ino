@@ -47,12 +47,11 @@ void setup() {
   servo4.write(50);
   servo6.write(50);
 }
-
-
 /**
- *  Loop principal do arduino
- * */
-void loop() {
+ * @brief Move as pernas para a frente em uma sequência de passos.
+ */
+ 
+void andarFrente(){
   for (int i = 0; i <= 7; i++) {
     //Perna esquerda
     servo2.write(pos2 + i);   
@@ -105,4 +104,11 @@ void loop() {
   }
 
   delay(1000);
+}
+
+/**
+ *  Loop principal do arduino
+ * */
+void loop() {
+  andarFrente();
 }
