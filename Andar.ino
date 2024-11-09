@@ -49,6 +49,9 @@ void setup() {
 }
 /**
  * @brief Move as pernas para a frente em uma sequência de passos.
+ *
+ * Anda pra frente com ambas as pernas
+ *
  */
  
 void andarFrente(){
